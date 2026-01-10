@@ -1,5 +1,7 @@
 # Lista que armazenará as tarefas
 tarefas = []
+id_atual = 1
+
 
 def menu():
     while True:
