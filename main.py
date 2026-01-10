@@ -2,6 +2,26 @@
 tarefas = []
 id_atual = 1
 
+# Função para criar tarefa
+def criar_tarefa():
+    global id_atual
+    print("""
+            ===== CRIAR TAREFA =====
+        """)
+    titulo = input("Título da tarefa: ")
+    descricao = input("Descrição da tarefa: ")
+
+    tarefa = {
+        "id": id_atual,
+        "titulo": titulo,
+        "descricao": descricao,
+        "status": "Pendente"
+    }
+
+    tarefas.append(tarefa)
+    id_atual += 1
+    print("Tarefa criada com sucesso!\n")
+
 
 def menu():
     while True:
