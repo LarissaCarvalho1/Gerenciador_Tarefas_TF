@@ -40,6 +40,23 @@ def listar_tarefas():
             -------------------------
         """)
 
+# Função para edição de tarefa
+def atualizar_tarefa():
+    print("""
+            ===== ATUALIZAR TAREFA =====
+        """)
+    id_tarefa = int(input("Informe o ID da tarefa a ser atualizada: "))
+
+    for tarefa in tarefas:
+        if tarefa["id"] == id_tarefa:
+            tarefa["titulo"] = input("Novo título: ")
+            tarefa["descricao"] = input("Nova descrição: ")
+            tarefa["status"] = input("Novo status (Pendente / Concluída): ")
+            print("Tarefa atualizada com sucesso!\n")
+            return
+
+    print("Tarefa não encontrada.\n")
+
 
 def menu():
     while True:
