@@ -1,3 +1,6 @@
+# Lista que armazenará as tarefas
+tarefas = []
+
 def menu():
     while True:
         print("""
