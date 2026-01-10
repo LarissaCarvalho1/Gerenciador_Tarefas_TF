@@ -22,6 +22,24 @@ def criar_tarefa():
     id_atual += 1
     print("Tarefa criada com sucesso!\n")
 
+# Função para listar tarefas
+def listar_tarefas():
+    if not tarefas:
+        print("\nNenhuma tarefa cadastrada.\n")
+        return
+
+    print("""
+            ===== LISTA DE TAREFAS =====
+        """)
+    for tarefa in tarefas:
+        print(f"""
+            ID: {tarefa['id']}
+            Título: {tarefa['titulo']}
+            Descrição: {tarefa['descricao']}
+            Status: {tarefa['status']}
+            -------------------------
+        """)
+
 
 def menu():
     while True:
