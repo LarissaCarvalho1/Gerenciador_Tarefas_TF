@@ -15,8 +15,8 @@ Desenvolver um sistema de gerenciamento de tarefas para a empresa LogTech, uma s
 ## Gestão do Projeto
 - *Metodologia*: Kanban via GitHub Projects.
 - *Planejamento*: Aba "Projects" com colunas A Fazer, Em Progresso, Concluído.
-- *Desenvolvimento*: Issues #1 a #5 para criação, fechadas ao implementar.
-- *Qualidade*: Issues #6 a #8 para testes, fechadas após validação no GitHub Actions. 
+- *Desenvolvimento*: Issues #1 a #7 para criação, fechadas ao implementar.
+- *Qualidade*: Issues #8 a #11 para testes, fechadas após validação no GitHub Actions. 
 - *Histórico*: Commits estruturados com Convetional Commits.
 - *Mudanças*: Registradas neste READEME e no Kanban.
 
@@ -31,15 +31,15 @@ Desenvolver um sistema de gerenciamento de tarefas para a empresa LogTech, uma s
 
 1. Clone o repositório com o comando:
 ```bash
-  git clone https://github.com/LarissaCarvalho1/Gerenciador_Tarefas_TF.git
+git clone https://github.com/LarissaCarvalho1/Gerenciador_Tarefas_TF.git
 ```
 
 2. Acesse a pasta do projeto:
 ```bash
-  cd Gerenciador_Tarefas_TF 
+cd Gerenciador_Tarefas_TF 
 ```
 
 3. Execute o projeto:
 ```bash
-  python main.py
+python main.py
 ```
