@@ -57,6 +57,21 @@ def atualizar_tarefa():
 
     print("Tarefa não encontrada.\n")
 
+# Função para excluir tarefa
+def excluir_tarefa():
+    print("""
+            ===== EXCLUIR TAREFA =====
+        """)
+    id_tarefa = int(input("Informe o ID da tarefa a ser excluída: "))
+
+    for tarefa in tarefas:
+        if tarefa["id"] == id_tarefa:
+            tarefas.remove(tarefa)
+            print("Tarefa excluída com sucesso!\n")
+            return
+
+    print("Tarefa não encontrada.\n")
+
 
 def menu():
     while True:
