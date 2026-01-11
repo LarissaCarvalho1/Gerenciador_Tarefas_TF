@@ -64,3 +64,4 @@ def test_excluir_tarefa(monkeypatch):
     main.excluir_tarefa()
 
     assert len(main.tarefas) == 0
+    
