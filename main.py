@@ -10,11 +10,13 @@ def criar_tarefa():
         """)
     titulo = input("Título da tarefa: ")
     descricao = input("Descrição da tarefa: ")
+    prioridade = input("Prioridade (Baixa / Média / Alta): ")
 
     tarefa = {
         "id": id_atual,
         "titulo": titulo,
         "descricao": descricao,
+        "prioridade": prioridade,
         "status": "Pendente"
     }
 
@@ -36,6 +38,7 @@ def listar_tarefas():
             ID: {tarefa['id']}
             Título: {tarefa['titulo']}
             Descrição: {tarefa['descricao']}
+            Prioridade: {tarefa['prioridade']}
             Status: {tarefa['status']}
             -------------------------
         """)
@@ -51,6 +54,7 @@ def atualizar_tarefa():
         if tarefa["id"] == id_tarefa:
             tarefa["titulo"] = input("Novo título: ")
             tarefa["descricao"] = input("Nova descrição: ")
+            tarefa["prioridade"] = input("Nova prioridade: ")
             tarefa["status"] = input("Novo status (Pendente / Concluída): ")
             print("Tarefa atualizada com sucesso!\n")
             return
