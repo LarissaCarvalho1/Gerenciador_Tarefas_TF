@@ -20,6 +20,9 @@ Desenvolver um sistema de gerenciamento de tarefas para a empresa LogTech, uma s
 - *Histórico*: Commits estruturados com Convetional Commits.
 - *Mudanças*: Registradas neste READEME e no Kanban.
 
+## Mudança de Escopo
+Durante a análise das necessidades da empresa de logística, LogTech, foi identificada a necessidade de ajustar o escopo do projeto para incluir a funcionalidade de *priorização de tarefas*. Essa mudança ocorreu devido à demanda da empresa por um maior controle sobre atividades críticas, permitindo acompanhar o fluxo de trabalho em tempo real e garantir que tarefas urgentes sejam tratadas com maior atenção. 
+
 ## Como executar
 
 ### Pré-requisitos
